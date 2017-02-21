@@ -1,23 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import CategoriesContainer from './components/CategoriesContainer';
-import Category from './components/Category';
+import RecipeCardsContainer from './components/RecipeCardsContainer';
+import SearchBar from './components/SearchBar';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      recipes: {}
+    }
+  }
+
+
+
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to the Recipe Box</h2>
         </div>
+        <SearchBar>
+
+        </SearchBar>
+
         <CategoriesContainer>
 
         </CategoriesContainer>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+        <RecipeCardsContainer>
+
+        </RecipeCardsContainer>
+
       </div>
     );
   }
