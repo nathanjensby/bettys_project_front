@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CategoriesContainer from './components/CategoriesContainer';
 import RecipeCardsContainer from './components/RecipeCardsContainer';
 import SearchBar from './components/SearchBar';
-import './App.css';
+import '../App.css';
 
 class App extends Component {
   constructor(props) {
